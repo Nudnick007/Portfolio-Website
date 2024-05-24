@@ -41,7 +41,7 @@ const Navbar = () => {
           }}
         >
           <img src="../src/assets/logoWhite.png" alt="logo" className="w-7 h-7" object-contain/>
-          <p className='text-white text-[18px] font-bold cursor-pointer flex'>Nikhil &nbsp; <span className='sm:block hidden'>| Python | Machine Learning | Web Development</span></p>
+          <p className='text-white text-[18px] font-bold cursor-pointer flex'>Nikhil Joshi&nbsp; <span className='sm:block hidden'></span></p>
         </Link>
         <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map((link) => (
