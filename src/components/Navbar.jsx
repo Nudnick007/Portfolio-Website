@@ -40,8 +40,8 @@ const Navbar = () => {
             window.scrollTo(0,0);
           }}
         >
-          <img src="../src/assets/logoWhite.png" alt="logo" className="w-7 h-7" object-contain/>
-          <p className='text-white text-[18px] font-bold cursor-pointer flex'>Nikhil Joshi&nbsp; <span className='sm:block hidden'></span></p>
+          <img src="../src/assets/logoWhite.png" alt="logo" className="w-9 h-9" object-contain/>
+          <p className='text-white text-[22px] font-bold cursor-pointer flex'>Nikhil Joshi&nbsp; <span className='sm:block hidden'></span></p>
         </Link>
         <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map((link) => (
@@ -49,7 +49,7 @@ const Navbar = () => {
             key = {link.id}
             className={`${
               active === link.title ? "text-white" : "text-secondary"
-            } hover:text-white text-[18px] font-medium cursor-pointer`}
+            } hover:text-white text-[22px] font-medium cursor-pointer`}
             onClick={()=>setActive(link.title)}
             >
               <a href={`#${link.id}`}>{link.title}</a>
