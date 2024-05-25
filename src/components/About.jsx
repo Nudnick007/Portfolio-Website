@@ -49,15 +49,23 @@ const About = () => {
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
         Persistent and dynamic software developer with a background in electronics and communications engineering, fueled by a passion for exploring machine learning concepts and web development. Committed to mastering this passion to enhance software solutions. 
+        <div className='mt-10'>
+        <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">
+          <button className='fancy-button'>
+            Click here to view my Resume/CV
+          </button>
+        </a>
+      </div>
       </motion.p>
 
-      <div>Download my Resume</div>
+      
 
       <div className='mt-20 flex flex-wrap gap-10'>
       {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>
+
     </>
   )
 }
